@@ -27,7 +27,7 @@ Use .env file to run the solution.
 ```
 Please replace the following environment values. In order to bypass the security use BYPASS_SECURIT to 1 otherwise assign 0 and provide other values.
 
-# Environment variables
+## Environment variables
 CLIENT-ID=client-id
 CLIENT-SECRECT=client-secrect
 AUDIENCE=audience
@@ -36,29 +36,36 @@ TOKEN-URL=token-url
 BYPASS_SECURITY=1
 ```
 
-``` Running application
+## Running applications
+
 On running via visual studio, the three browser window will be opened with swagger UI with all the API endpoints
 
-1 FrontEndPAi (http://localhost:8080/swagger/index.html)
-<img src="https://github.com/laxmanAdhikari/ApiCallingOtherApis/raw/master/Screenshot%20OrderProcessingApi.png" alt="FrontEndApi">
+## FrontEndApi
+```
+http://localhost:8080/swagger/index.html
+<img src="https://github.com/laxmanAdhikari/ApiCallingOtherApis/blob/master/Screenshot%20OrderProcessingApi.png" alt="FrontEndApi">
+````
 
 Click /Order/api/v1/placeorder and exdecute it.
 
-2 BackendApiOne (http://localhost:8081/swagger/index.html)
+## BackendApi One
+```
+http://localhost:8081/swagger/index.html
 
-![Screenshot](./Screenshot OrderProcessingApi.png)
-
-3 BackendApiTwo (http://localhost:8082/swagger/index.html)
-![Screenshot](./Screenshot OrderProcessingApi.png)
+![Screenshot](https://github.com/laxmanAdhikari/ApiCallingOtherApis/blob/master/Screenshot-OrderProcessingCustomer.png)
 
 ````
+## BackendApiTwo 
+```
+http://localhost:8082/swagger/index.html
+![Screenshot](https://github.com/laxmanAdhikari/ApiCallingOtherApis/blob/master/Screenshot%20OrderProcessingProduct.png)
+````
 
-``` Running Unit tests
+## Running Tests
+```
 Open tests from Test => Test Explorer
 The following tests will be visible.
-
 ![Screenshot](./Screenshot OrderProcessingApi.png)
-
 ```
 
 ## Code Analysis one
