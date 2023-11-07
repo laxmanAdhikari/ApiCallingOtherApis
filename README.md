@@ -36,7 +36,7 @@ TOKEN-URL=token-url
 BYPASS_SECURITY=1
 ```
 
-``` =========  Running application ====================
+``` Running application
 On running via visual studio, the three browser window will be opened with swagger UI with all the API endpoints
 
 1 FrontEndPAi (http://localhost:8080/swagger/index.html)
@@ -51,24 +51,22 @@ Click /Order/api/v1/placeorder and exdecute it.
 3 BackendApiTwo (http://localhost:8082/swagger/index.html)
 ![Screenshot](./Screenshot OrderProcessingApi.png)
 
-```` ======================================================
+````
 
-``` ===== Running Unit tests ========================
+``` Running Unit tests
 Open tests from Test => Test Explorer
 The following tests will be visible.
 
 ![Screenshot](./Screenshot OrderProcessingApi.png)
 
-```` ===============================================
+```
 
-
-``` ====  code Analysis  one ===============
+``` code Analysis one
 https://github.com/laxmanAdhikari/ApiCallingOtherApis/blob/master/CodeAnalysisOne.txt
-``` ===================================
-``` ================ Code Analysis two
+```
 
+``` Code Analysis two
 https://github.com/laxmanAdhikari/ApiCallingOtherApis/blob/master/CodeAnalysisTwo.txt
-
-``` =============================
+```
 
 
