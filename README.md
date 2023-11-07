@@ -40,16 +40,16 @@ BYPASS_SECURITY=1
 On running via visual studio, the three browser window will be opened with swagger UI with all the API endpoints
 
 1 FrontEndPAi (http://localhost:8080/swagger/index.html)
-![Screenshot](Screenshot OrderProcessingApi.png)
+![Screenshot](./Screenshot OrderProcessingApi.png)
 
 Click /Order/api/v1/placeorder and exdecute it.
 
 2 BackendApiOne (http://localhost:8081/swagger/index.html)
 
-![Screenshot](Screenshot OrderProcessingApi.png)
+![Screenshot](./Screenshot OrderProcessingApi.png)
 
 3 BackendApiTwo (http://localhost:8082/swagger/index.html)
-![Screenshot](Screenshot OrderProcessingApi.png)
+![Screenshot](./Screenshot OrderProcessingApi.png)
 
 ```` ======================================================
 
@@ -57,6 +57,6 @@ Click /Order/api/v1/placeorder and exdecute it.
 Open tests from Test => Test Explorer
 The following tests will be visible.
 
-![Screenshot](Screenshot OrderProcessingApi.png)
+![Screenshot](./Screenshot OrderProcessingApi.png)
 
 ```` ===============================================
