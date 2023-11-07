@@ -1,0 +1,86 @@
+Code Analysis
+
+Given the following:
+
+class A
+
+{
+
+public int a { get; set; }
+
+public int b { get; set; }
+
+}
+
+class B
+
+{
+
+public const A a;
+
+public B() { a.a = 10; }
+
+}
+
+int main()
+
+{
+
+B b = new B();
+
+Console.WriteLine("%d %d\n", b.a.a, b.a.b);
+
+return 0;
+
+}
+
+Question: Outline any issues/concerns with the implemented code.
+The provided code sample has several issues and concerns:
+Compilation Errors: In the class B, you have declared a constant a, which is of type A. However, constants must have a value assigned at the time of declaration, and objects (like instances of class A) cannot be assigned as constants. This will result in a compilation error.
+Null Reference Exception: Even if you were to fix the compilation error by making a a readonly field instead of a constant, you would encounter a null reference exception in the constructor of B. This is because you have not instantiated a, but you're trying to access its properties (a.a and a.b) in the constructor.
+Incorrect Console.WriteLine Format:In the Console.WriteLine statement, you are using the format specifier "%d", which is not valid in C#. The correct format specifier for integers in C# is {0}. So, it should be Console.WriteLine("{0} {1}\n", b.a.a, b.a.b).
+
+Fix:
+
+using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Text;
+
+class A
+
+{
+
+    public int a { get; set; }
+
+    public int b { get; set; }
+
+}
+
+class B
+
+{
+
+    //public const A a; // A const field requires a value to be provided
+
+    public readonly A a = new A(); // Fix
+
+    public B() { a.a = 10; }
+
+}
+
+class Program
+{
+    //static int Main() // Syntax error
+    //{
+    //    B b = new B();
+    //    Console.WriteLine("%d %d\n", b.a.a, b.a.b); // not supported format // Member 'B.a' cannot be accessed with an instance reference; qualify it with a type name
+    //    return 0;
+    //}
+    static int Main()
+    {
+        B b = new B();
+        Console.WriteLine("{0} {1}\n", b.a.a, b.a.b); 
+        return 0;
+
+    }
+}
