@@ -40,8 +40,7 @@ BYPASS_SECURITY=1
 On running via visual studio, the three browser window will be opened with swagger UI with all the API endpoints
 
 1 FrontEndPAi (http://localhost:8080/swagger/index.html)
-![Screenshot](./Screenshot%20OrderProcessingApi.png)
-
+![Screenshot](https://raw.githubusercontent.com/laxmanAdhikari/ApiCallingOtherApis/master/Screenshot%20OrderProcessingApi.png)
 
 Click /Order/api/v1/placeorder and exdecute it.
 
